@@ -1,0 +1,154 @@
+body {
+    font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: rgb(0, 55, 0);
+    color: white;
+    padding: 5px;
+}
+
+.resumen {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.imagenes-libros {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+.imagenes-libros img {
+    max-width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.bootstrap {
+    flex: 1;
+    margin-right: 20px; /* Reduce el margen */
+}
+
+.ventas {
+    flex: 1;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se alineen en varias filas si es necesario */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.tab-pane .ebook-item {
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+    align-items: center; /* Centra la imagen y el texto */
+    width: 150px; /* Ajusta el ancho de cada elemento */
+    margin-bottom: 20px; /* Espacio entre filas */
+    flex: 0 0 auto; /* Evita que los elementos se estiren */
+}
+
+.tab-pane .ebook-item img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.tab-pane .ebook-item p {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    margin: 0;
+}
+
+.ventas p:not(:has(strong)) {
+    background-color: rgb(0, 55, 0);
+    color: white;
+    padding: 5px; /* Opcional: agrega un poco de espacio interno */
+    margin: 5px 0; /* Opcional: agrega espacio entre los párrafos */
+}
+
+/* Estilos generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar márgenes y padding generales */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Resumen con márgenes reducidos */
+    .resumen {
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* Apartado "Libros": imágenes pequeñas y en una línea */
+    #profile-tab-pane img {
+        max-width: 80px; /* Tamaño reducido */
+        height: auto;
+    }
+    #profile-tab-pane div {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Espacio entre las imágenes */
+        flex-wrap: nowrap; /* Mantiene las imágenes en una sola línea */
+    }
+
+    /* Apartado "eBooks": imagen arriba y texto abajo */
+    #contact-tab-pane .ebook-item {
+        display: flex;
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #contact-tab-pane .ebook-item img {
+        max-width: 100%; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+    #contact-tab-pane .ebook-item p {
+        text-align: center; /* Centra el texto */
+        margin: 0;
+    }
+
+    /* Centrar la sección "ventas" después del bootstrap */
+    .ventas {
+        text-align: center;
+        margin: 20px auto; /* Centra horizontalmente */
+    }
+
+    /* Ajustar el contenedor-flex para que las secciones se apilen */
+    .contenedor-flex {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center;
+        margin: 10px;
+    }
+
+    /* Ajustar las imágenes de libros en "ventas" */
+    .imagenes-libros {
+        flex-wrap: wrap; /* Permite que las imágenes se alineen en varias filas */
+        justify-content: center;
+        gap: 10px;
+    }
+    .imagenes-libros img {
+        max-width: 80px; /* Tamaño reducido */
+        height: auto;
+    }
+}

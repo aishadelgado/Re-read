@@ -6,9 +6,82 @@
     <title>Re-read Aisha</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/icon.png">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <section class="encabezado">
+        <p>Re-Read</p>
+    </section>
+    <section class="resumen">
+        <h1>Re-Read</h1>
+        <br>
+        <p>En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+    </section>
+    <div class="contenedor-flex">
+        <section class="bootstrap">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Re-Read</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Libros</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">eBooks</button>
+                </li>
+            </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <p><strong>Nunca la lectura ha sido tan necesaria</strong></p>
+                <p>En estos tiempos difíciles Re-Read se suma al mensaje de #yomequedoencasa por el bien común de la sociedad.</p>
+                <p><strong>Reduce & Reuse & Read</strong></p>
+                <p>Somos la librería Eco-Friendly - Re-Read nació pensando en verde con el objetivo de compartir una pasión. la lectura y para expresar una preocupación: si queremos construir un futuro sostenible, es necesario que reduzcamos el consumo y que reutilicemos cuantos más objetos materiales mejor.</p>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <p><strong>Todos los libros tienen el mismo precio</strong></p>
+                <p>Libros casi nuevos a un precio casi imposible.</p>
+                <div>
+                    <img src="./img/1-libro-3€.gif">
+                    <img src="./img/2-libros-5€.gif">
+                    <img src="./img/5-libros-10€.gif">
+                </div>
+                <p><strong>¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</strong></p>
+                <p>En Re-Read compramos tus libros para darles una segunda vida. Los compramos todos al mismo precio: 0,20 euros. Siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <p><strong>Toda la actualidad en eBook</strong></p>
+                <div class="ebook-item">
+                    <img src="./img/cell.jpeg" alt="Cell">
+                    <p>A través de los teléfonos móviles se envía un mensaje que convierte a todos en esclavos asesinos...</p>
+                </div>
+                <div class="ebook-item">
+                    <img src="./img/doctorsleep.jpeg" alt="Doctor Sleep">
+                    <p>Una novela que entusiasmará a los millones de lectores de El resplandor y que encantará...</p>
+                </div>
+                <div class="ebook-item">
+                    <img src="./img/elciclodelhombrelobo.jpeg" alt="El ciclo del hombre lobo">
+                    <p>Un escalofriante revisión del mito del hombre lobo por el rey de la literatura de terror...</p>
+                </div>
+                <div class="ebook-item">
+                    <img src="./img/mientrasescribo.jpeg" alt="Mientras escribo">
+                    <p>Pocas veces un libro sobre el oficio de escribir ha resultado tan clarificador, útil y revelador.</p>
+                </div>
+                <div class="ebook-item">
+                    <img src="./img/elresplandor.jpeg" alt="El resplandor">
+                    <p>Esa es la palabra que Danny había visto en el espejo, y, aunque no sabía leer, entendió que era un mensaje de horror...</p>
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="ventas">
+        <p><strong>Top ventas.</strong></p>
+        <p>Cien años de soledad.</p>
+        <p>Crónica de una muerte anunciada.</p>
+        <p>El otoño del patriarca.</p>
+        <p>El general en su laberinto.</p>
+    </section>
+    </div>
 </body>
 </html>
